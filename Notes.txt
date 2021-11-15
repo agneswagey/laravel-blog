@@ -1,0 +1,2 @@
+Kalo property static, pake self::
+Kalo property biasa, pake $this->
