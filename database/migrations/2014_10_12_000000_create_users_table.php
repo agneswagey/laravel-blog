@@ -16,6 +16,7 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('username')->unique();  // field ini untuk ganti angka user_id di URI-nya.
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
